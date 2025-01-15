@@ -133,4 +133,4 @@ Com as seguintes condições:
 - ⚠️ Deve incluir a licença
 - ℹ️ Não oferece nenhuma garantia
 
-Copyright © 2025 Quantum TriggerBot
+Copyright © 2025 Discord-Bot
