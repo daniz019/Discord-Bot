@@ -83,18 +83,22 @@ DB_HOST=localhost
 <summary>Tabelas do Sistema</summary>
 
 ### Tabela `logins`
-- ID do Usuário (Chave Primária)
-- Nome de Usuário do Discord
-- HWID
-- Status do Teste
-- Data de Expiração
-- Data do Último Reset
+- `id` (int) - ID único do registro, auto incremento
+- `username` (varchar) - Nome de usuário do Discord
+- `key` (varchar) - Chave de acesso do usuário
+- `hwid` (varchar) - Hardware ID do usuário
+- `creation_date` (datetime) - Data de criação do registro
+- `last_reset` (datetime) - Data do último reset de HWID
+- `discord_id` (varchar) - ID do usuário no Discord
+- `trial_end` (datetime) - Data de término do período de teste
+- `trial_completed` (boolean) - Status de conclusão do teste
 
 ### Tabela `excluded_users`
-- ID do Usuário
-- Nome de Usuário do Discord
-- HWID
-- Data de Exclusão
+- `id` (int) - ID único do registro, auto incremento
+- `discord_id` (varchar) - ID do usuário no Discord
+- `discord_username` (varchar) - Nome de usuário do Discord
+- `hwid` (varchar) - Hardware ID do usuário banido
+- `exclusion_date` (datetime) - Data de exclusão/banimento
 </details>
 
 ## 🛠️ Comandos do Bot
